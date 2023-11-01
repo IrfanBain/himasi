@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #1d7cf2;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: transparent;
+}
+header .nav-left{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+header .nav-left h2{
+    margin-left: 10px;
+    font-family: sans-serif;
+    color: white;
+}
+header .nav-right img{
+    margin: 0 5px;
+}
+
+.section-1{
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.section-1 img{
+    width: 100%;
+}
+
+.section-2{
+    margin-top: 100vh;
+    padding: 0 80px;
+}
+.section-2 .activity{
+    color: white;
+}
+.section-2 .activity .jdl h1{
+    font-family: 'coiny';
+    font-size: 43px;
+    text-align: center;
+}
+.section-2 .date{
+    display: flex;
+    align-items: center;
+}
+.section-2 .des{
+    margin-top: 10px;
+}
+.section-2 .des figure{
+    float: left;
+    margin-right: 30px;
+    background-color: #1d7cf2;
+    z-index: 1;
+    width: fit-content;
+    padding:0 20px 20px 0;
+}
+.section-2 .des p{
+    text-align: justify;
+    text-indent: 50px;
+    font-size: 20px;
+    background-color: #60a4f9;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.section-3{
+    position: relative;
+    margin-top: 50px;
+}
+.section-3 .footer{
+    display: flex; 
+    position: absolute; 
+    bottom: 50px; 
+    justify-content: space-around; 
+    width: 100%;
+}
+.section-3 .footer .footer-tittle{
+    width: 200px; 
+    text-align: center; 
+    color: white;
+}
+
+.media{
+    display: none;
+}
+
+@keyframes fade {
+    0%,100%{opacity: 1;}
+    90%{opacity: .2;}
+}
+@media screen and (max-width: 900px) {
+    main{
+        display: none;
+    }
+    .media{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: flex;
+        background-color: white;
+        height: 100vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+
